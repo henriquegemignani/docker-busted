@@ -11,4 +11,4 @@ RUN luarocks install busted
 
 VOLUME ["/host"]
 WORKDIR /host
-CMD lua Test.lua
+ENTRYPOINT ["busted"]
